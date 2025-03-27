@@ -10,9 +10,9 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem("token");
     if (token) {
       try {
-        console.log("Found Token in LocalStorage:", token);
+        // console.log("Found Token in LocalStorage:", token);
         const decodedUser = jwtDecode(token);
-        console.log("Decoded User:", decodedUser);
+        // console.log("Decoded User:", decodedUser);
         setUser(decodedUser);
       } catch (error) {
         console.error("Invalid token", error);
