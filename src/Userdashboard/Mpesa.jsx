@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 
 const MpesaPayment = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -15,8 +15,32 @@ const MpesaPayment = () => {
     const total = params.get("total");
     if (total) {
       setAmount(total); // Set total amount automatically
+      const getToken = async() => {
+        const response = await fetch (`${import.meta.env.VITE_TRANSACTION_BASE_URL}/api/orders/token`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+        },
+          body: JSON.stringify(
+            {
+              username: import.meta.env.VITE_USERNAME,
+              password: import.meta.env.VITE_PASSWORD
+            }
+          )
+        });
+        const responseData = await response.json();
+        console.log(responseData);
+        const accessToken = responseData.access_token;
+        localStorage.setItem("AuthToken", accessToken);
+        console.log(`Token from getToken: ${localStorage.getItem("AuthToken")}`);
+      }
+      getToken();
     }
   }, [location]);
+
+  useEffect(() => {
+    
+  }, [])
 
   const handlePayment = async (e) => {
     e.preventDefault();
@@ -24,12 +48,23 @@ const MpesaPayment = () => {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:4000/api/mpesa/pay", {
-        phoneNumber,
-        amount,
+      const authToken = localStorage.getItem("AuthToken");
+      console.log(`Token from STKPush: ${localStorage.getItem("AuthToken")}`);
+      const response = await fetch(`${import.meta.env.VITE_TRANSACTION_BASE_URL}/api/orders/pay`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(
+          {
+            token: authToken,
+            phoneNumber: phoneNumber,
+            amount: amount,
+            invoiceNumber: "AlvinJr-Food Place",
+          })
       });
 
-      if (response.data.success) {
+      if (response.ok) {
         setMessage("Payment request sent. Check your phone!");
       } else {
         setMessage("Payment failed. Try again.");
