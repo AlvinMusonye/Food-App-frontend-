@@ -2,10 +2,10 @@ import { useCart } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
-  { id: 1, name: "Grilled Chicken", price: 1500, image: "public/Burger 🍔.jpeg" },
-  { id: 2, name: "Beef Steak", price: 250, image: "/images/steak.jpg" },
-  { id: 3, name: "Veggie Pasta", price: 570, image: "/images/pasta.jpg" },
-  { id: 4, name: "Seafood Platter", price: 3000, image: "/images/seafood.jpg" },
+  { id: 1, name: "cupcakes", price: 150, image: "/31 Best Desserts in Paris to Try in 2022.jpeg" },
+  { id: 2, name: "Donuts", price: 250, image: "/Chocolate Glazed Donuts by Master Baker - My Urban Treats.jpeg" },
+  { id: 3, name: "sliced cakes", price: 350, image: "/Martha's Country Bakery (@marthascountrybakery) •….jpeg" },
+  { id: 4, name: "Driscoll's", price: 300, image: "/Mixed Berry Tart Recipe _ Driscoll's.jpeg" },
 ];
 
 const pastrymenu = () => {
@@ -19,7 +19,7 @@ const pastrymenu = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Hotel Menu 🍽️</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-orange-500">Pastry  Menu 🍽️</h1>
 
       {/* Food Items */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

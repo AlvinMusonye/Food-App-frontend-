@@ -2,12 +2,12 @@ import { useCart } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
-  { id: 1, name: "Grilled Chicken", price: 560, image: "/Delicious Pizza (1).jpeg" },
+  { id: 1, name: "Grilled Chicken", price: 560, image: "/Beautiful Burger _ yum yum.jpeg" },
   { id: 2, name: "Beef Steak", price: 350, image: "/Burger .jpeg" },
-  { id: 3, name: "Veggie Pasta", price: 570, image: "/Cajun Seafood Boil with Garlic Butter Sauce.jpeg" },
-  { id: 4, name: "Seafood Platter", price: 800, image: "/Fast Food Clipart Transparent PNG Hd, Fast Food Cooking, Cooking, Safe, Food Charge PNG Image For Free Download.jpeg" },
- { id: 5, name: "Grilled Chicken", price: 950, image: "/Delicious Pizza (1).jpeg"},
- { id: 6, name: "Grilled Chicken", price: 1500, image: "/Delicious Pizza (1).jpeg"}
+  { id: 3, name: "Veggie Burger", price: 570, image: "/Burger King Is Selling A Crispy Taco For Just $1.jpeg" },
+  { id: 4, name: "Seafood Platter", price: 800, image: "/crack burgers -.jpeg" },
+ { id: 5, name: "Classic cheese Burger", price: 950, image: "/Classic Cheeseburger [25 Minutes].jpeg"},
+ { id: 6, name: "Cripsy Chicken Burger", price: 850, image: "/🔥 Satisfy Your Cravings with Burger King Melts! 🍔🧀.jpeg"}
   
 ];
 
@@ -22,7 +22,7 @@ const Kfcmenu = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl text-orange-500 font-bold text-center mb-6">Hotel Menu 🍽️</h1>
+      <h1 className="text-3xl text-orange-500 font-bold text-center mb-6">Burger Menu 🍽️</h1>
 
       {/* Food Items */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
