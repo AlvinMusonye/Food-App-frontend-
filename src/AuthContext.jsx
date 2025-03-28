@@ -5,6 +5,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -20,6 +21,19 @@ export const AuthProvider = ({ children }) => {
       }
     }
   }, []);
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
 
   const login = (token, navigate) => { // ✅ Receive navigate as a parameter
     console.log("Login function called");
@@ -45,7 +59,7 @@ export const AuthProvider = ({ children }) => {
   return (
 
     <div>
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, login, logout, theme, toggleTheme }}>
       {children}
     </AuthContext.Provider>
     </div>

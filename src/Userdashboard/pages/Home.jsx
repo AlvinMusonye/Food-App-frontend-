@@ -4,10 +4,10 @@ import Food from '../header/Food'
 
 function Home() {
     return (
-        <div className="px-4">
+        <div className="px-4 dark:bg-dark-contrast">
 
             <Header />
-            <h2 className="text-4xl animate-bounce text-center font-bold mt-10">
+            <h2 className="text-4xl animate-bounce text-center font-bold mt-10 dark:text-gray-100">
                 Order from the <span className="text-orange-500">Best</span>, get it Delivered by the <span className="text-orange-500">Best</span>! 🚀
             </h2>
             <Food />

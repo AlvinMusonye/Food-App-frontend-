@@ -3,24 +3,25 @@ import { Link } from "react-router-dom";
 import { CiUser, CiSearch } from "react-icons/ci";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { GiShoppingCart } from "react-icons/gi";
+import { FaMoon, FaSun } from 'react-icons/fa';
 import { useAuth } from "../AuthContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { user, logout } = useAuth(); 
-  
+  const { theme, toggleTheme, user, logout } = useAuth();
+
   if (location.pathname === "/admin-dashboard") {
     return null;
   }
 
   return (
-    <header className="w-full shadow-md text-black px-2 md:px-10 lg:px-30">
+    <header className="w-full shadow-md text-black px-2 md:px-10 lg:px-30 dark:text-gray-200 dark:bg-dark-default">
       <div className="flex justify-between items-center">
-       
+
         {/* Logo */}
         <div className="flex-1">
           <img
-            src="public/Free Vector _ Hand drawn potato cartoon illustration.jpeg" 
+            src="public/Free Vector _ Hand drawn potato cartoon illustration.jpeg"
             alt="My Logo"
             className="w-24 cursor-pointer hover:scale-105 transition-transform"
           />
@@ -37,6 +38,7 @@ const Navbar = () => {
           <Link to="/menu" className="p-3 hover:underline hover:text-orange-500 rounded-md transition-all">
             Offers
           </Link>
+          
         </nav>
 
         {/* Right Side Icons & Authentication Buttons */}
@@ -48,6 +50,13 @@ const Navbar = () => {
           <Link to="/cart" className="hover:underline hover:text-orange-500 rounded-md transition-all p-3">
             <GiShoppingCart className="text-2xl" />
           </Link>
+
+          <button
+            className='hidden md:inline text-lg dark:bg-white text-black bg-purple-default dark:text-dark-default px-3 lg:px-4 rounded-full cursor-pointer'
+            onClick={toggleTheme}
+          >
+            {theme === "light" ? <FaMoon /> : <FaSun />}
+          </button>
 
           {/* Authentication Buttons */}
           {user ? (
@@ -70,10 +79,11 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <nav className="xl:hidden absolute top-0 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 text-lg font-semibold">
-          
+
           <button className="self-end text-3xl p-4" onClick={() => setIsMenuOpen(false)}>
             <IoClose />
           </button>
+          
 
           <Link to="/" className="p-3 hover:bg-orange-400 hover:text-white w-full text-center transition-all" onClick={() => setIsMenuOpen(false)}>
             Home
@@ -100,7 +110,7 @@ const Navbar = () => {
             </button>
           ) : (
             <Link to="/login" className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
-              <CiUser/>
+              <CiUser />
             </Link>
           )}
         </nav>
