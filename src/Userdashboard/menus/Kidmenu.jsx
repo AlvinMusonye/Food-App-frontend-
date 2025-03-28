@@ -2,10 +2,10 @@ import { useCart } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
-  { id: 1, name: "Grilled Chicken", price: 1500, image: "public/Burger 🍔.jpeg" },
-  { id: 2, name: "Beef Steak", price: 250, image: "/images/steak.jpg" },
-  { id: 3, name: "Veggie Pasta", price: 570, image: "/images/pasta.jpg" },
-  { id: 4, name: "Seafood Platter", price: 3000, image: "/images/seafood.jpg" },
+  { id: 1, name: "Grilled Chicken", price: 1500, image: "/Fruity PEBBLES French Toast.jpeg" },
+  { id: 2, name: "Beef Steak", price: 250, image: "/Creamy Cauliflower Linguini - Feeding Tiny Bellies.jpeg" },
+  { id: 3, name: "Veggie Pasta", price: 570, image: "/Fruit Tarts.jpeg" },
+  { id: 4, name: "Seafood Platter", price: 3000, image: "/Fruity PEBBLES French Toast.jpeg" },
 ];
 
 const Kidmeal = () => {
