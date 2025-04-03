@@ -26,6 +26,7 @@ import Beveragesmenu from "./Userdashboard/menus/Beveragesmenu";
 import Mpesa from "./Userdashboard/Mpesa";
 import Deliveries from "./Admindashboard/Deliveries";
 import Orders from "./Admindashboard/OrderAdmin";
+import RestaurantReviews from "./Userdashboard/pages/RestaurantReviews";
 
 
 function App() {
@@ -59,8 +60,7 @@ function App() {
               <Route path="/user-dashboard/pastry/pastrymenu" element={<Pastrymenu />} />
               <Route path="/user-dashboard/fruit/fruitmenu" element={<Fruitmenu />} />
               <Route path="/user-dashboard/Beverages/beveragesmenu" element={<Beveragesmenu />} />
-              <Route path="/admin-dashboard/deliveries" element={<Deliveries />} />
-              <Route path="/admin-dashboard/orders" element={<Orders />} />
+              <Route path="/search" element={<RestaurantReviews />} />
 
 
             </Route>
