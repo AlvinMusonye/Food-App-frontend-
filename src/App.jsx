@@ -24,6 +24,8 @@ import Fruit from "./Userdashboard/pages/Fruit";
 import Fruitmenu from "./Userdashboard/menus/Fruitmenu";
 import Beveragesmenu from "./Userdashboard/menus/Beveragesmenu";
 import Mpesa from "./Userdashboard/Mpesa";
+import Deliveries from "./Admindashboard/Deliveries";
+import Orders from "./Admindashboard/OrderAdmin";
 
 
 function App() {
@@ -57,11 +59,16 @@ function App() {
               <Route path="/user-dashboard/pastry/pastrymenu" element={<Pastrymenu />} />
               <Route path="/user-dashboard/fruit/fruitmenu" element={<Fruitmenu />} />
               <Route path="/user-dashboard/Beverages/beveragesmenu" element={<Beveragesmenu />} />
+              <Route path="/admin-dashboard/deliveries" element={<Deliveries />} />
+              <Route path="/admin-dashboard/orders" element={<Orders />} />
 
 
             </Route>
             <Route element={<ProtectedRoute allowedRoles={["admin"]} />}>
               <Route path="/admin-dashboard" element={<AdminDashboard />} />
+              <Route path="/deliveries" element={<Deliveries /> } />
+              <Route path="/orders" element={<Orders /> } />
+              
             </Route>
           </Routes>
           <Footer />

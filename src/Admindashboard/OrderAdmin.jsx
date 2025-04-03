@@ -16,8 +16,8 @@ const Orders = () => {
   );
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <div className="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <div className="p-6 bg-gray-100 min-h-screen dark:bg-dark-default">
+      <div className="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-6 dark:bg-dark-default dark:text-gray-100" >
         <h2 className="text-2xl font-semibold mb-4">Orders</h2>
 
  
@@ -30,7 +30,7 @@ const Orders = () => {
         />
 
     
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto dark:bg-dark-default dark:text-gray-100">
           <table className="w-full border-collapse border">
             <thead>
               <tr className="bg-orange-500 text-white">
@@ -43,7 +43,7 @@ const Orders = () => {
             <tbody>
               {filteredOrders.length > 0 ? (
                 filteredOrders.map((order, index) => (
-                  <tr key={index} className="text-center border hover:bg-gray-100">
+                  <tr key={index} className="text-center border ">
                     <td className="py-2 px-4 border">{order.id}</td>
                     <td className="py-2 px-4 border">{order.customer}</td>
                     <td className="py-2 px-4 border">{order.amount}</td>

@@ -21,19 +21,19 @@ const Kfcmenu = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl text-orange-500 font-bold text-center mb-6">Burger Menu 🍽️</h1>
+    <div className=" mx-auto p-6 dark:bg-dark-contrast">
+      <h1 className="text-3xl text-orange-500 font-bold text-center mb-6 ">Burger Menu 🍽️</h1>
 
       {/* Food Items */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {menuItems.map((item) => (
           <div
             key={item.id}
-            className="border p-4 rounded-lg shadow-lg text-center cursor-pointer hover:bg-gray-100"
+            className="border p-4 rounded-lg shadow-lg text-center cursor-pointer"
             onClick={() => handleItemClick(item)}
           >
             <img src={item.image} alt={item.name} className="w-full h-40 object-cover rounded-md mb-4" />
-            <h2 className="text-xl font-semibold">{item.name}</h2>
+            <h2 className="text-xl font-semibold dark:text-gray-100">{item.name}</h2>
             <p className="text-lg font-bold text-orange-600">Ksh {item.price.toFixed(2)}</p>
           </div>
         ))}

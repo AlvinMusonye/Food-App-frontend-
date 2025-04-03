@@ -14,7 +14,7 @@ function Food() {
 
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default ">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast ">
                     <img
                         src="public/Food & Travel With Hugh Harper (@hungryhugh) •….jpeg"
                         alt="Fast Food"
@@ -28,7 +28,7 @@ function Food() {
                         </button>
                     </Link>
                 </div>
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="public/Kenyan Kunde _ Mboga Kienyeji (Cowpeas Leaves) Recipe.jpeg"
                         alt="kienyenji"
@@ -42,7 +42,7 @@ function Food() {
                     </Link>
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="public/31 Best Desserts in Paris to Try in 2022.jpeg"
                         alt="Pastry"
@@ -58,7 +58,7 @@ function Food() {
 
 
 
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="public/Instagram.jpeg"
                         alt="Fast Food"
@@ -72,7 +72,7 @@ function Food() {
                     </Link>
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="c524801b-21c0-4793-9c0b-9274a22944f0.jpeg"
                         alt="Fast Food"
@@ -86,7 +86,7 @@ function Food() {
                     </Link>
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="public/6839509f-ac7f-46eb-8066-36eddd2a055a.jpeg"
                         alt="Fast Food"
@@ -100,7 +100,7 @@ function Food() {
                     </Link>
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="public/b585749e-9c53-48d9-8912-f52c056f6ed3.jpeg"
                         alt="Fast Food"
@@ -114,7 +114,7 @@ function Food() {
                     </Link>
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-default">
+                <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
                         src="public/Cajun Seafood Boil with Garlic Butter Sauce.jpeg"
                         alt="Sea Food"

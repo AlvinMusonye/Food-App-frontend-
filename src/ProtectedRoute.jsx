@@ -4,7 +4,7 @@ import { useAuth } from "./AuthContext";
 const ProtectedRoute = ({ allowedRoles }) => {
   const { user } = useAuth();
 
-  console.log("ProtectedRoute - Current User:", user); // DEBUGGING LOG
+  console.log("ProtectedRoute - Current User:", user); 
 
   if (!user || !allowedRoles.includes(user.role)) {
     console.log("Unauthorized Access - Redirecting to /unauthorized");

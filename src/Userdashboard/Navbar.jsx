@@ -15,13 +15,13 @@ const Navbar = () => {
   }
 
   return (
-    <header className="w-full shadow-md text-black px-2 md:px-10 lg:px-30 dark:text-gray-200 dark:bg-dark-default">
+    <header className="w-full shadow-md text-black px-2 md:px-10 lg:px-30 dark:text-gray-200 dark:bg-dark-contrast">
       <div className="flex justify-between items-center">
 
         {/* Logo */}
         <div className="flex-1">
           <img
-            src="public/Free Vector _ Hand drawn potato cartoon illustration.jpeg"
+            src="public/Free_Vector___Hand_drawn_potato_cartoon_illustration-removebg-preview.png"
             alt="My Logo"
             className="w-24 cursor-pointer hover:scale-105 transition-transform"
           />
@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
 
           <button
-            className='hidden md:inline text-lg dark:bg-white text-black bg-purple-default dark:text-dark-default px-3 lg:px-4 rounded-full cursor-pointer'
+            className='hidden md:inline text-lg dark:bg-white text-black bg-purple-default dark:text-dark-contrast px-3 lg:px-4 rounded-full cursor-pointer'
             onClick={toggleTheme}
           >
             {theme === "light" ? <FaMoon /> : <FaSun />}

@@ -10,7 +10,7 @@ import { CiLogout } from "react-icons/ci";
 
 const Nav = () => {
   return (
-    <nav className="bg-orange-500 text-white w-1/5  min-h-screen p-5">
+    <nav className="bg-orange-500 text-white w-1/5 dark:text-dark-default  min-h-screen p-5">
       <div className="flex flex-col gap-6">
    
         <div className="p-3 hover:bg-orange-600 rounded-lg">

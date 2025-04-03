@@ -29,10 +29,10 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen bg-gray-100 dark:text-dark-contrast">
       <NavAdmin />
       
-      <div className="flex-1 p-6">
+      <div className="flex-1 p-6 dark:bg-dark-contrast">
         <MainAdmin />
         
         {/* Orders Management Table */}

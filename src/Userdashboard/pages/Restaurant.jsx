@@ -19,7 +19,7 @@ function Restaurant() {
   );
 
   return (
-    <div className="p-4">
+    <div className="p-4 dark:bg-dark-contrast">
       <div className="text-center font-bold text-2xl text-orange-500 m-4">
         <h1 className="underline">Order from Any Restaurant near you</h1>
         <input
@@ -31,10 +31,10 @@ function Restaurant() {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 m-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 m-4 ">
         {filteredRestaurants.length > 0 ? (
           filteredRestaurants.map((restaurant) => (
-            <div key={restaurant.id} className="shadow-md flex flex-col items-center p-4 rounded-lg bg-white">
+            <div key={restaurant.id} className="shadow-md flex flex-col items-center p-4 rounded-lg bg-white dark:bg-dark-contrast dark:shadow-2xl dark:text-gray-100">
               <img src={restaurant.img} className="w-48 h-48 object-cover rounded-md" alt={restaurant.name} />
               <h2 className="mt-2 text-lg font-semibold">{restaurant.name}</h2>
 

@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect, useContext } from "react";
-import { jwtDecode } from "jwt-decode"; // FIXED IMPORT ✅
+import { jwtDecode } from "jwt-decode"; 
 
 const AuthContext = createContext();
 
@@ -11,9 +11,9 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem("token");
     if (token) {
       try {
-        // console.log("Found Token in LocalStorage:", token);
+  
         const decodedUser = jwtDecode(token);
-        // console.log("Decoded User:", decodedUser);
+        
         setUser(decodedUser);
       } catch (error) {
         console.error("Invalid token", error);
@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
   };
 
 
-  const login = (token, navigate) => { // ✅ Receive navigate as a parameter
+  const login = (token, navigate) => {
     console.log("Login function called");
     localStorage.setItem("token", token);
 
@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }) => {
       const decodedUser = jwtDecode(token);
       console.log("Decoded User after Login:", decodedUser);
       setUser(decodedUser);
-      navigate(decodedUser.role === "admin" ? "/admin-dashboard" : "/user-dashboard"); // ✅ Redirect after login
+      navigate(decodedUser.role === "admin" ? "/admin-dashboard" : "/user-dashboard"); 
     } catch (error) {
       console.error("Error decoding token", error);
     }

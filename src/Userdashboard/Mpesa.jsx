@@ -32,7 +32,7 @@ const MpesaPayment = () => {
         console.log(responseData);
         const accessToken = responseData.access_token;
         localStorage.setItem("AuthToken", accessToken);
-        console.log(`Token from getToken: ${localStorage.getItem("AuthToken")}`);
+        console.log(`Token from  getToken: ${localStorage.getItem("AuthToken")}`);
       }
       getToken();
     }
@@ -78,7 +78,8 @@ const MpesaPayment = () => {
   };
 
   return (
-    <div className="max-w-md h-screen mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+  <div className="dark:bg-dark-contrast">
+      <div className="max-w-md h-screen mx-auto p-6 bg-white shadow-lg rounded-lg  dark:bg-dark-contrast">
       <div className="flex items-center justify-center space-x-3 mb-4">
         <img src="/Mpesa Withdrawal Charges 2022 Latest Update.jpeg" alt="Mpesa Logo" className="w-12 h-12 object-cover rounded-full" />
         <h2 className="text-2xl font-bold text-green-600">Lipa Na M-Pesa</h2>
@@ -91,7 +92,7 @@ const MpesaPayment = () => {
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
           required
-          className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-green-300"
+          className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-green-300 dark:ring-white dark:text-gray-100"
         />
 
         <input
@@ -112,6 +113,7 @@ const MpesaPayment = () => {
 
       {message && <p className="mt-4 text-center text-lg font-semibold text-gray-700">{message}</p>}
     </div>
+  </div>
   );
 };
 
