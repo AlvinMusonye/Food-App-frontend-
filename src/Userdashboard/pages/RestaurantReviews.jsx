@@ -30,7 +30,7 @@ const RestaurantReviews = () => {
     <div className="  p-6 bg-white  shadow-lg dark:bg-dark-contrast">
       <h1 className="text-2xl font-bold mb-4 text-center dark:text-gray-100">Restaurant Reviews</h1>
 
-      {/* Review Form */}
+   
       <form onSubmit={handleSubmit} className="mb-6 dark:text-gray-100">
         <input
           type="text"
@@ -41,7 +41,7 @@ const RestaurantReviews = () => {
           required
         />
 
-        {/* Star Rating */}
+      
         <div className="mb-2 flex space-x-1">
           {[1, 2, 3, 4, 5].map((star) => (
             <button
@@ -71,7 +71,6 @@ const RestaurantReviews = () => {
         </button>
       </form>
 
-      {/* Display Reviews */}
       <div className="space-y-4">
         {reviews.map((review) => (
           <div key={review.id} className="p-4 border rounded-lg dark:bg-dark-contrast dark:text-gray-100 bg-gray-50">

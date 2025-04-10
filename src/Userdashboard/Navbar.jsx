@@ -5,6 +5,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { GiShoppingCart } from "react-icons/gi";
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useAuth } from "../AuthContext";
+import { MdOutlineReviews } from "react-icons/md";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
           <Link to="/restaurant" className="p-3 hover:underline hover:text-orange-500 rounded-md transition-all">
             Restaurants
           </Link>
-          <Link to="/menu" className="p-3 hover:underline hover:text-orange-500 rounded-md transition-all">
+          <Link to="/offers" className="p-3 hover:underline hover:text-orange-500 rounded-md transition-all">
             Offers
           </Link>
           
@@ -44,7 +45,7 @@ const Navbar = () => {
         {/* Right Side Icons & Authentication Buttons */}
         <div className="hidden xl:flex flex-1 justify-end gap-6">
           <Link to="/search" className="hover:underline hover:text-orange-500 rounded-md transition-all p-3">
-            <CiSearch className="text-2xl" />
+          <MdOutlineReviews className="text-2xl" />
           </Link>
 
           <Link to="/cart" className="hover:underline hover:text-orange-500 rounded-md transition-all p-3">

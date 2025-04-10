@@ -27,6 +27,7 @@ import Mpesa from "./Userdashboard/Mpesa";
 import Deliveries from "./Admindashboard/Deliveries";
 import Orders from "./Admindashboard/OrderAdmin";
 import RestaurantReviews from "./Userdashboard/pages/RestaurantReviews";
+import OffersPage from "./Userdashboard/header/offersPage";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
               <Route path="/user-dashboard" element={<UserDashboard />} />
               <Route path="/home" element={<Home />} />
               <Route path="/restaurant" element={<Restaurant />} />
+              <Route path="/offers" element={<OffersPage />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/mpesa" element={<Mpesa />} />
               <Route path="/user-dashboard/fastfood" element={<FastFood />} />
