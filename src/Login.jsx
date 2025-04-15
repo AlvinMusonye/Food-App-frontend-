@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "./AuthContext";
-import { useNavigate } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -52,6 +52,7 @@ const Login = () => {
           >
             Login
           </button>
+          <p className="dark:text-gray-100">Dont have an Account ???!     <Link to='/signin' className="text-orange-500 underline">Sign In</Link></p>
         </form>
       </div>
     </div>

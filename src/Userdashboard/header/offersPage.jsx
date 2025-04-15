@@ -36,7 +36,7 @@ const offers = [
     id: 6,
     title: "Burger fries plus coke @700ksh ",
     description: "Get a complete meal for four at a special price. Great for families! and kids",
-    image: "public/ba3b43ba-81c7-4546-8373-0a6ebbbf66d7.jpeg",
+    image: "public/assets/ba3b43ba-81c7-4546-8373-0a6ebbbf66d7.jpeg",
   },
 ];
 
@@ -44,11 +44,11 @@ const OffersPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Special Offers</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="p-6 dark:bg-dark-contrast">
+      <h1 className="text-3xl font-bold mb-6 text-orange-500">Special Offers</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
         {offers.map((offer) => (
-          <div key={offer.id} className="bg-white rounded-xl shadow-md p-4">
+          <div key={offer.id} className="bg-white rounded-xl shadow-md p-4 dark:bg-dark-contrast dark:text-gray-100">
             <img
               src={offer.image}
               alt={offer.title}

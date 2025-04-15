@@ -37,12 +37,12 @@ const RestaurantReviews = () => {
           placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 border rounded mb-2 dark:text-gray-100"
+          className="w-full p-2 border  rounded mb-2 dark:text-gray-100"
           required
         />
 
       
-        <div className="mb-2 flex space-x-1">
+        <div className="mb-2 flex space-x-1 ">
           {[1, 2, 3, 4, 5].map((star) => (
             <button
               type="button"
@@ -73,7 +73,7 @@ const RestaurantReviews = () => {
 
       <div className="space-y-4">
         {reviews.map((review) => (
-          <div key={review.id} className="p-4 border rounded-lg dark:bg-dark-contrast dark:text-gray-100 bg-gray-50">
+          <div key={review.id} className="p-4 w-150 border rounded-lg dark:bg-dark-contrast dark:text-gray-100 bg-gray-50">
             <h2 className="font-semibold">{review.name}</h2>
             <p className="text-yellow-500">{"★".repeat(review.rating)}</p>
             <p className="text-gray-700">{review.comment}</p>

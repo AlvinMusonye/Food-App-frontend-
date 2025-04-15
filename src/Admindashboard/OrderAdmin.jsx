@@ -3,9 +3,11 @@ import { useState } from "react";
 const Orders = () => {
   // Sample order data (Replace with API data if needed)
   const [orders, setOrders] = useState([
-    { id: "#001", customer: "John Doe", amount: "Ksh 3000", status: "Completed" },
-    { id: "#002", customer: "Jane Smith", amount: "Ksh 2030", status: "Pending" },
-    { id: "#003", customer: "Bob Marley", amount: "Ksh 1570", status: "Shipped" },
+    { id: "#001", customer: "John Doe", amount: "Ksh 3000", status: "Delvered" },
+    { id: "#002", customer: "Jane Smith", amount: "Ksh 2030", status: "Pending Delivery" },
+    { id: "#003", customer: "Bob Marley", amount: "Ksh 1570", status: "Delivered" },
+    { id: "#004", customer: "Wahome Jeremy", amount: "Ksh 1970", status: "Pending Delivery" },
+    { id: "#005", customer: "Marvin Maina", amount: "Ksh 570", status: "Delivered" },
   ]);
 
   const [search, setSearch] = useState("");

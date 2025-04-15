@@ -12,7 +12,7 @@ function Kienyenji() {
                 {/* Item 1 */}
                 <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
                     <img 
-                        src="/Fruity PEBBLES French Toast.jpeg" 
+                        src="/public/assets/Fruity PEBBLES French Toast.jpeg" 
                         alt="Njama Njama and FuFu" 
                         className="w-48 h-48 object-cover rounded-md" 
                     />
@@ -27,7 +27,7 @@ function Kienyenji() {
                 {/* Item 2 */}
                 <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
                     <img 
-                        src="/Creamy Cauliflower Linguini - Feeding Tiny Bellies.jpeg" 
+                        src="/public/assets/Creamy Cauliflower Linguini - Feeding Tiny Bellies.jpeg" 
                         alt="Efo Riro - Nigerian Spinach Stew" 
                         className="w-48 h-48 object-cover rounded-md" 
                     />
@@ -42,7 +42,7 @@ function Kienyenji() {
                 {/* Item 3 */}
                 <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
                     <img 
-                        src="/Fruity PEBBLES French Toast.jpeg" 
+                        src="/public/assets/Fruity PEBBLES French Toast.jpeg" 
                         alt="Muboora Recipe (Pumpkin Leaves)" 
                         className="w-48 h-48 object-cover rounded-md" 
                     />

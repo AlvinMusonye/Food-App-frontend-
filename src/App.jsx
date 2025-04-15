@@ -28,6 +28,8 @@ import Deliveries from "./Admindashboard/Deliveries";
 import Orders from "./Admindashboard/OrderAdmin";
 import RestaurantReviews from "./Userdashboard/pages/RestaurantReviews";
 import OffersPage from "./Userdashboard/header/offersPage";
+import Product from "./Admindashboard/Product";
+import SignIn from "./Signin";
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
 
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route path="/unauthorized" element={<Unauthorized />} />
 
 
@@ -70,6 +73,7 @@ function App() {
               <Route path="/admin-dashboard" element={<AdminDashboard />} />
               <Route path="/deliveries" element={<Deliveries /> } />
               <Route path="/orders" element={<Orders /> } />
+              <Route path="/settings" element={<Product /> } />
               
             </Route>
           </Routes>

@@ -2,12 +2,12 @@ import { useCart } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
-  { id: 1, name: "Grilled Chicken", price: 560, image: "/Beautiful Burger _ yum yum.jpeg" },
-  { id: 2, name: "Beef Steak", price: 350, image: "/Burger .jpeg" },
-  { id: 3, name: "Veggie Burger", price: 570, image: "/Burger King Is Selling A Crispy Taco For Just $1.jpeg" },
-  { id: 4, name: "Seafood Platter", price: 800, image: "/crack burgers -.jpeg" },
- { id: 5, name: "Classic cheese Burger", price: 950, image: "/Classic Cheeseburger [25 Minutes].jpeg"},
- { id: 6, name: "Cripsy Chicken Burger", price: 850, image: "/🔥 Satisfy Your Cravings with Burger King Melts! 🍔🧀.jpeg"}
+  { id: 1, name: "Grilled Chicken", price: 560, image: "/public/assets/Beautiful Burger _ yum yum.jpeg" },
+  { id: 2, name: "Beef Steak", price: 350, image: "/public/assets/Burger .jpeg" },
+  { id: 3, name: "Veggie Burger", price: 570, image: "/public/assets/Burger King Is Selling A Crispy Taco For Just $1.jpeg" },
+  { id: 4, name: "Seafood Platter", price: 800, image: "/public/assets/crack burgers -.jpeg" },
+ { id: 5, name: "Classic cheese Burger", price: 950, image: "/public/assets/Classic Cheeseburger [25 Minutes].jpeg"},
+ { id: 6, name: "Cripsy Chicken Burger", price: 850, image: "/public/assets/🔥 Satisfy Your Cravings with Burger King Melts! 🍔🧀.jpeg"}
   
 ];
 

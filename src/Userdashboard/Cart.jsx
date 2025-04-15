@@ -39,7 +39,7 @@ const Cart = () => {
               </div>
             ))}
 
-            <h3 className="text-xl font-bold mt-4">
+            <h3 className="text-xl font-bold mt-4 dark:text-gray-100">
               Total: <span className="text-orange-600">Ksh {totalPrice.toFixed(2)}</span>
             </h3>
 

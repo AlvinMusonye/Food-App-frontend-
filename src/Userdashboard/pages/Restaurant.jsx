@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 const restaurantData = [
-  { id: 1, name: "KFC", img: "public/restaurants/KFC.jpeg" },
-  { id: 2, name: "Chicken Inn", img: "public/restaurants/Chicken Inn Menu, Pricing, Locations & Review.jpeg" },
-  { id: 3, name: "Pizza Inn", img: "public/restaurants/Pizza Inn Menu, 19 Pizza Types, and Prices (2024).jpeg" },
-  { id: 4, name: "Mcdonald's", img: "public/mcd.jpeg" },
-  { id: 5, name: "Galitos", img: "public/galitos.jpeg" },
-  { id: 6, name: "Subway", img: "public/subway.jpeg" },
-  { id: 7, name: "Burger King", img: "public/Burger king logo animation.jpeg" },
-  { id: 8, name: "CJ's", img: "public/restaurants/CJ's (@cjs254) • Instagram photos and videos.jpeg" },
+  { id: 1, name: "KFC", img: "public/assets/restaurants/KFC.jpeg" },
+  { id: 2, name: "Chicken Inn", img: "public/assets/restaurants/Chicken Inn Menu, Pricing, Locations & Review.jpeg" },
+  { id: 3, name: "Pizza Inn", img: "public/assets/restaurants/Pizza Inn Menu, 19 Pizza Types, and Prices (2024).jpeg" },
+  { id: 4, name: "Mcdonald's", img: "public/assets/mcd.jpeg" },
+  { id: 5, name: "Galitos", img: "public/assets/galitos.jpeg" },
+  { id: 6, name: "Subway", img: "public/assets/subway.jpeg" },
+  { id: 7, name: "Burger King", img: "public/assets/Burger king logo animation.jpeg" },
+  { id: 8, name: "CJ's", img: "public/assets/restaurants/CJ's (@cjs254) • Instagram photos and videos.jpeg" },
 ];
 
 function Restaurant() {
