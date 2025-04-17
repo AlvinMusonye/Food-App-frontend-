@@ -11,7 +11,7 @@ const Header = () => {
         className="bg-transparent flex-1  dark:text-gray-100 focus:outline-none px-2" width={150}
       />
       <div className="cursor-pointer">
-        <img className="w-6 h-6" src="public/Free Vector _ Hand drawn potato cartoon illustration.jpeg" alt="search-button" />
+        <img className="w-6 h-6" src="public/assets/Free Vector _ Hand drawn potato cartoon illustration.jpeg" alt="search-button" />
       </div>
      
     </div>

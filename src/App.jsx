@@ -30,6 +30,7 @@ import RestaurantReviews from "./Userdashboard/pages/RestaurantReviews";
 import OffersPage from "./Userdashboard/header/offersPage";
 import Product from "./Admindashboard/Product";
 import SignIn from "./Signin";
+import Registration from "./Admindashboard/Registration";
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
               <Route path="/deliveries" element={<Deliveries /> } />
               <Route path="/orders" element={<Orders /> } />
               <Route path="/settings" element={<Product /> } />
+              <Route path="/profile" element={<Registration />} />
               
             </Route>
           </Routes>

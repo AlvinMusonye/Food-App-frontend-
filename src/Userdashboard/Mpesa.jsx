@@ -81,7 +81,7 @@ const MpesaPayment = () => {
   <div className="dark:bg-dark-contrast">
       <div className="max-w-md h-screen mx-auto p-6 bg-white shadow-lg rounded-lg  dark:bg-dark-contrast">
       <div className="flex items-center justify-center space-x-3 mb-4">
-        <img src="/Mpesa Withdrawal Charges 2022 Latest Update.jpeg" alt="Mpesa Logo" className="w-12 h-12 object-cover rounded-full" />
+        <img src="public/Assets/Mpesa Withdrawal Charges 2022 Latest Update.jpeg" alt="Mpesa Logo" className="w-12 h-12 object-cover rounded-full" />
         <h2 className="text-2xl font-bold text-green-600">Lipa Na M-Pesa</h2>
       </div>
 

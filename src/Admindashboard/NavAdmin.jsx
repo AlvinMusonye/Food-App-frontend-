@@ -45,7 +45,7 @@ const Nav = () => {
           <Link to="/profile" className="flex items-center gap-3 cursor-pointer">
             {/* <img src="/icons/profile.png" className="w-6 h-6" alt="profile" /> */}
             <CgProfile />
-            <h3 className="text-lg">Profile</h3>
+            <h3 className="text-lg">Registration</h3>
           </Link>
         </div>
 
