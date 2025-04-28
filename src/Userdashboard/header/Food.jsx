@@ -16,7 +16,7 @@ function Food() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast ">
                     <img
-                        src="public/Food & Travel With Hugh Harper (@hungryhugh) •….jpeg"
+                        src="/Food & Travel With Hugh Harper (@hungryhugh) •….jpeg"
                         alt="Fast Food"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -30,7 +30,7 @@ function Food() {
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/Kenyan Kunde _ Mboga Kienyeji (Cowpeas Leaves) Recipe.jpeg"
+                        src="/Kenyan Kunde _ Mboga Kienyeji (Cowpeas Leaves) Recipe.jpeg"
                         alt="kienyenji"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -44,7 +44,7 @@ function Food() {
 
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/31 Best Desserts in Paris to Try in 2022.jpeg"
+                        src="/31 Best Desserts in Paris to Try in 2022.jpeg"
                         alt="Pastry"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -60,7 +60,7 @@ function Food() {
 
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/Instagram.jpeg"
+                        src="/Instagram.jpeg"
                         alt="Fast Food"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -74,7 +74,7 @@ function Food() {
 
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/c524801b-21c0-4793-9c0b-9274a22944f0.jpeg"
+                        src="/c524801b-21c0-4793-9c0b-9274a22944f0.jpeg"
                         alt="Fast Food"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -88,7 +88,7 @@ function Food() {
 
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/6839509f-ac7f-46eb-8066-36eddd2a055a.jpeg"
+                        src="/6839509f-ac7f-46eb-8066-36eddd2a055a.jpeg"
                         alt="Fast Food"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -102,7 +102,7 @@ function Food() {
 
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/b585749e-9c53-48d9-8912-f52c056f6ed3.jpeg"
+                        src="/b585749e-9c53-48d9-8912-f52c056f6ed3.jpeg"
                         alt="Fast Food"
                         className="w-52 h-52 object-cover rounded-md"
                     />
@@ -116,7 +116,7 @@ function Food() {
 
                 <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col items-center dark:bg-dark-contrast">
                     <img
-                        src="public/Cajun Seafood Boil with Garlic Butter Sauce.jpeg"
+                        src="/Cajun Seafood Boil with Garlic Butter Sauce.jpeg"
                         alt="Sea Food"
                         className="w-52 h-52 object-cover rounded-md"
                     />
