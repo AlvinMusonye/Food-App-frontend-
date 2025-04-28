@@ -2,10 +2,10 @@ import { useCart } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
-  { id: 1, name: "cupcakes", price: 150, image: "/public/assets/31 Best Desserts in Paris to Try in 2022.jpeg" },
-  { id: 2, name: "Donuts", price: 250, image: "/public/assets/Chocolate Glazed Donuts by Master Baker - My Urban Treats.jpeg" },
-  { id: 3, name: "sliced cakes", price: 350, image: "/public/assets/Martha's Country Bakery (@marthascountrybakery) •….jpeg" },
-  { id: 4, name: "Driscoll's", price: 300, image: "/public/assets/Mixed Berry Tart Recipe _ Driscoll's.jpeg" },
+  { id: 1, name: "cupcakes", price: 150, image: "/public/31 Best Desserts in Paris to Try in 2022.jpeg" },
+  { id: 2, name: "Donuts", price: 250, image: "/public/Chocolate Glazed Donuts by Master Baker - My Urban Treats.jpeg" },
+  { id: 3, name: "sliced cakes", price: 350, image: "/public/Martha's Country Bakery (@marthascountrybakery) •….jpeg" },
+  { id: 4, name: "Driscoll's", price: 300, image: "/public/Mixed Berry Tart Recipe _ Driscoll's.jpeg" },
 ];
 
 const pastrymenu = () => {

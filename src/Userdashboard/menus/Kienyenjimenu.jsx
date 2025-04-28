@@ -2,10 +2,10 @@ import { useCart } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
-  { id: 1, name: "mrendaah", price: 150, image: "/public/assets/Njama Njama and FuFu.jpeg" },
-  { id: 2, name: "Muboora (Pumpkin Leaves)", price: 250, image: "/public/assets/Muboora Recipe (Pumpkin Leaves).jpeg" },
-  { id: 3, name: "Kunde Veggie", price: 270, image: "/public/assets/Kenyan Kunde _ Mboga Kienyeji (Cowpeas Leaves) Recipe.jpeg" },
-  { id: 4, name: "Njama Njama", price: 300, image: "/public/assets/Njama Njama and FuFu.jpeg" },
+  { id: 1, name: "mrendaah", price: 150, image: "/public/Njama Njama and FuFu.jpeg" },
+  { id: 2, name: "Muboora (Pumpkin Leaves)", price: 250, image: "/public/Muboora Recipe (Pumpkin Leaves).jpeg" },
+  { id: 3, name: "Kunde Veggie", price: 270, image: "/public/Kenyan Kunde _ Mboga Kienyeji (Cowpeas Leaves) Recipe.jpeg" },
+  { id: 4, name: "Njama Njama", price: 300, image: "/public/Njama Njama and FuFu.jpeg" },
 ];
 
 const Kienyenjimenu = () => {

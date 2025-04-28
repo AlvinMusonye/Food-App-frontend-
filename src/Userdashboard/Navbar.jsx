@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-1">
           <img
-            src="public/assets/Free_Vector___Hand_drawn_potato_cartoon_illustration-removebg-preview.png"
+            src="/Free_Vector___Hand_drawn_potato_cartoon_illustration-removebg-preview.png"
             alt="My Logo"
             className="w-24 cursor-pointer hover:scale-105 transition-transform"
           />
