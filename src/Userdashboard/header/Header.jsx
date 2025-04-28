@@ -6,7 +6,7 @@ function Header() {
         <div className="p-4 sm:p-8 md:p-12">
             <div className="relative flex items-center justify-center md:justify-end pr-4 md:pr-10 h-64 md:h-80 lg:h-96 ">
                
-                <div className="hidden md:block absolute inset-0 bg-[url('public/cd569c2c-def5-41cd-a03d-624ccd8b6503.jpeg')] bg-cover bg-center"></div>
+                <div className="hidden md:block absolute inset-0 bg-[url('/cd569c2c-def5-41cd-a03d-624ccd8b6503.jpeg')] bg-cover bg-center"></div>
                 
                 <div className="relative text-center md:text-right z-10">
                     <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white">
